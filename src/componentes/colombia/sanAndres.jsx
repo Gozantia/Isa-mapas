@@ -1,10 +1,25 @@
-import React from 'react'
+import React, {useRef} from 'react'
+import Sidebar from "./sidebar"
 
 function SanAndres() {
-    return (
+        const childRef = useRef();
+    return (<div>
+        <Sidebar ref={childRef} width={300} height={"100vh"}>
+          <h1>Nav Item</h1>
+          <h1>Nav Item</h1>
+          <h1>Nav Item</h1>
+          <h1>Nav Item</h1>
+          <h1>Nav Item</h1>
+        </Sidebar>
+
             <section className="sanAndresSection">
-                    <h3>Hola</h3>
+                    <div>
+                    <button onClick={() => { childRef.current.showAlert() }}>
+                                 Call Function
+                        </button>
+                    </div>
             </section>
+        </div>
     )
 }
 

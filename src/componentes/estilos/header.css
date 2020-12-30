@@ -13,26 +13,9 @@ header {
     width: 188px; 
 }
  nav {
-     flex: 50%;
+     flex: 95%;
  }
- .hashtag {
-    flex: 10%;
-    display: flex;
-    background: #fff;
-    height: 35px;
-    align-items: center;
-    align-self: center;
-    justify-content: center;
-    margin: 0 27px;
-    border-radius: 20px;
-    font-family: AmsiPro-SemiBold;
-    color: #4E4E4E;
- }
-
- .naranjaCursiva{
-    font-family: AmsiPro-BlackItalic;
-    color: #DB5113;
- }
+ 
 
 nav ul {
     list-style: none;

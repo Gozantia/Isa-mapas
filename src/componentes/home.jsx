@@ -1,15 +1,21 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-const Home = () => (
+
+const Home = ({mostrarSideBar, show})  => (
+    
+    
     <section className="cuerpo">
+        
         <article className="slogan">
         <div> 
             Cuando somos conscientes
             <strong> de que todos somos uno, </strong>
             hay conexión
              <hr />
-             
+             <button onClick={ mostrarSideBar }> 
+             {show ? <p> mostrar</p> : <p> ocultar</p>}
+             </button>
             </div>
     
         </article>

@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,500&display=swap');
 body {
     font-family: 'Montserrat', sans-serif;
     background: url("./componentes/imagenes/bg_index_1.jpg") no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin:0;
 }
 
 @media (max-width:1500px) and (min-width:1200px)  {
@@ -36,47 +40,27 @@ header {
      flex: 50%;
  }
  .hashtag {
-    flex: 10%;
+    flex: 10% 1;
     display: flex;
     background: #fff;
     height: 35px;
     align-items: center;
     align-self: center;
     justify-content: center;
-    margin: 0 27px;
     border-radius: 20px;
-    font-family: AmsiPro-SemiBold;
+    font-family: 'Rubik', sans-serif;
     color: #4E4E4E;
+    width: 16rem;
+    position: absolute;
+    right: 10px;
+    top: 10px;
  }
 
  .naranjaCursiva{
-    font-family: AmsiPro-BlackItalic;
+    font-family: 'Rubik';
+    font-style: italic;
     color: #DB5113;
  }
-
-nav ul {
-    list-style: none;
-    overflow: hidden;
-    display: flex;
-    gap: 30px;
-}
-
-nav ul li {
-    float: left;
-    padding:5px  10px;
-}
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 100;
-    font-size: 16px;
-}
-
-nav ul li:hover {
-    background: #ffffff33;
-    border-radius: 10px;
-    cursor: pointer;
-}
 
 .cuerpo {
     display: flex;
@@ -140,6 +124,55 @@ img.SomosUno {
     top: -1rem;
 }
 
+.app {
+    display: flex;
+}
+.sidenav {
+    height: 100vh;
+    width: 0;
+    background: #fff;
+    transition: all 1s;
+    opacity: 0;
+}
+.sidenav.active {
+    width: 400px;
+    opacity: 1;
+}
+
+.side-bar {
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid;
+    border-radius: 0;
+    border-color: rgba(64, 194, 133, 0.693);
+    background-color: rgb(255, 255, 255);
+    transition: 0.8s ease;
+}
+.toggle-menu {
+    height: 50px;
+    border-top-right-radius: 10rem;
+    border-bottom-right-radius: 9rem;
+    width: 10px;
+    position: absolute;
+    outline: none;
+    z-index: 1;
+    background-color: rgba(64, 194, 133, 0.693);
+    border-color: rgba(64, 194, 133, 0.693);
+    border-left: 0;
+}
+
+.sidebar {
+    background: #fff;
+    flex: 1;
+    height: 100vh;
+}
+ .sidebar h3 {
+    color: red
+}
+.contenido {
+    flex: 3;
+}
 @media (min-width: 768px) {
 
     header {
@@ -225,9 +258,6 @@ img.SomosUno {
   transition: 1000ms ease-out;
   opacity: 0;
   overflow: hidden;
-  
-
-  
 }
 
 .slide-exit-active {

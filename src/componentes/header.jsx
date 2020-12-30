@@ -21,11 +21,7 @@ function Header() {
                 <li><a href="#Aliados">Aliados</a></li> */}
             </ul>
         </nav>
-        <div className="hashtag">
-            <div className="naranjaCursiva">#</div> 
-            CUIDÁNDOTE
-            <div className="naranjaCursiva">NOSCUIDAMOS</div>
-        </div>
+        
     </header>
 
     )

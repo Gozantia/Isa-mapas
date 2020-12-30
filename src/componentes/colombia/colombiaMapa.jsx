@@ -1,30 +1,29 @@
-import React, { PureComponent } from 'react'
+import React, {useState} from 'react'
 import '../estilos/colombia.css';
-import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Link, Route} from "react-router-dom";
 import SanAndres from './sanAndres';
-class ColombiaMapa extends PureComponent {
 
-
-    render() {
+function ColombiaMapa({mostrarSideBar}) {
+        const [showNav, setShowNav]= useState (true)
+    
         return (
+            
             <Router>
-            <Switch>
-               <Route path="/sanAndres" exact component={SanAndres} />
-               <Route path="/colombia" exact component={Colombia} />
+            <Switch> 
+               <Route path={`/colombia/sanAndres`} exact component={SanAndres} />
             </Switch>
+            <section className="colombiaSection">
+        <Link to={`/colombia/sanAndres`} className="SanAndresMapa" onClick={ mostrarSideBar }>
+        <div className="tituloIzquierda">San Andrés</div>
+        <div className="dashed"></div>
+        <div className="puntoPais"> </div>
+        </Link>
+        </section>
+
              </Router>
+
         )
-    }
+    
 }
 
-const Colombia = () => (
-    <section className="colombiaSection">
-    <Link to="/sanAndres" className="SanAndresMapa">
-            <div className="tituloIzquierda">San Andrés</div>
-            <div className="dashed"></div>
-            <div className="puntoPais"> </div>
-
-    </Link>
-    </section>
-)
 export default ColombiaMapa
