@@ -1,10 +1,11 @@
 import React from 'react'
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import '../estilos/colombia.css';
 
-function colombia({mostrarSideBar}) {
+function Colombia() {
     return (
         <section className="colombiaSection">
-        <Link to={`/colombia/sanAndres`} className="SanAndresMapa" onClick={ mostrarSideBar }>
+        <Link  to={`/colombia-san-andres`} className="SanAndresMapa">
         <div className="tituloIzquierda">San Andrés</div>
         <div className="dashed"></div>
         <div className="puntoPais"> </div>
@@ -13,4 +14,4 @@ function colombia({mostrarSideBar}) {
     )
 }
 
-export default colombia
+export default Colombia
