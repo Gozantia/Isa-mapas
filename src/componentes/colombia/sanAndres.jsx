@@ -1,22 +1,13 @@
 import React, {useRef} from 'react'
-import Sidebar from "./sidebar"
-
 function SanAndres() {
         const childRef = useRef();
-    return (<div>
-        <Sidebar ref={childRef} width={300} height={"100vh"}>
-          <h1>Nav Item</h1>
-          <h1>Nav Item</h1>
-          <h1>Nav Item</h1>
-          <h1>Nav Item</h1>
-          <h1>Nav Item</h1>
-        </Sidebar>
-
+    return (<div style={{display: 'flex'}}>
             <section className="sanAndresSection">
                     <div>
                     <button onClick={() => { childRef.current.showAlert() }}>
                                  Call Function
                         </button>
+                        <h3>Holaa gonorreas</h3>
                     </div>
             </section>
         </div>

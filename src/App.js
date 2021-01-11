@@ -7,27 +7,19 @@ import About from "./componentes/about";
 import Contact from "./componentes/contact";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Header from "./componentes/header";
-import Colombia from "./componentes/colombia/colombiaMapa"  
-import Navbar from "./componentes/navbar"
+import Colombia from "./componentes/colombia/colombiaIndex"  
+import Sidebar from "./componentes/sidebar"
+  
 
-  export default function App() {
-    const [showNav, setShowNav]= useState (false)
-
-    // const mostrarSideBar = useCallback(
-    //   event => {
-    //     event.preventDefault();
-    //     setShowNav(!showNav)
-    //   },
-    //   [showNav]
-    // );
+export default function App() {
+    const [showSide, setShowSide]= useState (false)
     
     const mostrarSideBar = () => {  
-      setShowNav(!showNav)
+      setShowSide(!showSide)
   }
 
-
     const tiempo = { enter: 3800, exit: 400 };    
-    const AnimatedSwitch = withRouter(({ location }) => (
+    const ContentContainer = withRouter(({ location }) => (
       <TransitionGroup>
       <CSSTransition key={location.key} classNames="slide" timeout={tiempo}>
       <main>
@@ -37,7 +29,7 @@ import Navbar from "./componentes/navbar"
             component={() => <Home mostrarSideBar={mostrarSideBar} />} />
             <Route path="/about/"  component={About} />
         <Route path="/contact"  component={Contact} />
-        <Route path="/colombia" component={() => <Colombia mostrarSideBar={mostrarSideBar} key={showNav} /> } />
+        <Route path="/colombia" component={() => <Colombia mostrarSideBar={mostrarSideBar} key={showSide} /> } />
         <Route render={() => <h1>404: Página no encontrada</h1>} />
       </Switch>
       </main>
@@ -46,24 +38,16 @@ import Navbar from "./componentes/navbar"
     )
     );
 
+   
     return (
       
      <Router>
-       
        <div className="app">
-       {/* <div className="sidebar">
-         <h3>Trompas</h3>
-       </div> */}
-        <Navbar show={showNav} mostrarSideBar={mostrarSideBar} />
-       <div className="contenido">
-       <div className="hashtag">
-            <div className="naranjaCursiva">#</div> 
-            CUIDÁNDOTE
-            <div className="naranjaCursiva">NOSCUIDAMOS</div>
-        </div>
-      <Header/>
-      <AnimatedSwitch />
-      </div>
+       <Sidebar show={showSide} mostrarSideBar={mostrarSideBar} />
+          <div className="contenido">
+          <Header/>
+          <ContentContainer />
+          </div>
       </div>
     </Router>
    
