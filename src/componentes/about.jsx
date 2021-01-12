@@ -14,5 +14,5 @@ export default About;
 
 const FakeText = () => (
     <p>
-Trompas and motas   </p>
+Trompas and motas, colombia-san-andres, colombia-san-andres, colombia-san-andres  </p>
     )

@@ -6,6 +6,8 @@ import Slogan from "../componentes/slogan";
 
 
 function Header() {
+
+    
     return (
         <>
         <header>
@@ -14,10 +16,9 @@ function Header() {
             
              <nav>
             <ul>
-            <Link to="/"><li>Home</li></Link>
-            <Link to="/about/"><li>About</li></Link>
-            <Link to="/contact"><li>Contact</li></Link>
-                {/* <li><Link to="/colombia">Colombia</Link></li>
+            <Link to="/colombia"><li>Colombia</li></Link>
+            <Link to="/colombia-san-andres"><li>San Andrés</li></Link>
+                {/* <Link to="/colombia"><li>Colombia/li></Link><
                 <li><a href="#Perú">Perú</a></li>
                 <li><a href="#Brasil"> Brasil</a></li> 
                 <li><a href="#Chile"> Chile</a></li>
