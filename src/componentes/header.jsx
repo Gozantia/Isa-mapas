@@ -16,9 +16,6 @@ function Header() {
             
              <nav>
             <ul>
-            <Link to="/"><li>Home</li></Link>
-            <Link to="/about/"><li>About</li></Link>
-            <Link to="/contact"><li>Contact</li></Link>
             <Link to="/colombia"><li>Colombia</li></Link>
             <Link to="/colombia-san-andres"><li>San Andrés</li></Link>
                 {/* <Link to="/colombia"><li>Colombia/li></Link><

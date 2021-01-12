@@ -1,8 +1,8 @@
 
 import React, {useState, useEffect} from "react";
 import {useLocation } from "react-router-dom";
-import About from "./about";
-import Contact from "./contact";
+import SanAndres from "./colombia/sanAndres/contenido";
+
 
 function Sidebar() {
     const location = useLocation();
@@ -11,19 +11,18 @@ function Sidebar() {
 
        useEffect(() => {
 
+
         setShowSide( () => {
             switch (location.pathname) {
                 case '/colombia-san-andres':
-                    setShowSide(<About/>);
-                  break;
-                  case '/colombia':
-                    setShowSide(<Contact/>);
+                    setShowSide(<SanAndres/>);
                   break;
                   default:  
                     setShowSide('');
             }
 
         }
+
 
         );
       }, [location]);
