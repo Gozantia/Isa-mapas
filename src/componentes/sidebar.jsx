@@ -14,7 +14,7 @@ function Sidebar() {
 
         setShowSide( () => {
             switch (location.pathname) {
-                case '/colombia-san-andres':
+                case '/colombia/san-andres':
                     setShowSide(<SanAndres/>);
                   break;
                   default:  
