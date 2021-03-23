@@ -12,20 +12,9 @@ function Header() {
         <>
         <header>
         <div className="logo">
-        <Link to="/"><img src={Logo} alt="ISA"/></Link></div>
-            
-             <nav>
-            <ul>
-            <Link to="/colombia"><li>Colombia</li></Link>
-            <Link to="/colombia-san-andres"><li>San Andrés</li></Link>
-                {/* <Link to="/colombia"><li>Colombia/li></Link><
-                <li><a href="#Perú">Perú</a></li>
-                <li><a href="#Brasil"> Brasil</a></li> 
-                <li><a href="#Chile"> Chile</a></li>
-                <li><a href="#Aliados">Aliados</a></li> */}
-            </ul>
-        </nav>
-    </header>
+        <Link to="/"><img src={Logo} alt="ISA"/></Link>
+        </div>
+        </header>
     <Slogan/>
     </>
     )
