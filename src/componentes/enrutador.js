@@ -1,9 +1,9 @@
 import React from 'react'
 import { Route, Switch , withRouter} from "react-router-dom";
 import Home from "../componentes/home";
-import Colombia from "../componentes/colombia/colombiaMapa"  
+import Colombia from "../componentes/colombia/colombiaMapa";
+import Chile from "../componentes/chile" 
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-import SanAndres from './colombia/sanAndres/mapa';
 
 const Enrutador = withRouter(({ location }) => (
     <TransitionGroup>
@@ -13,7 +13,7 @@ const Enrutador = withRouter(({ location }) => (
     
       <Route path="/" exact component={() => <Home />} />
       <Route path="/colombia" component={() => <Colombia /> } />
-      <Route path="/colombia-san-andres" exact component={SanAndres} />
+      <Route path="/chile" component={() => <Chile /> } />
       <Route render={() => <h1>404: Página no encontrada</h1>} />
      
     </Switch>

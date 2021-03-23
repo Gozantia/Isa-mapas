@@ -36,11 +36,11 @@ const Home = ({mostrarSideBar, show})  => (
                 <div className="puntoPais"> </div>
                 
             </a>
-            <a href="#Chile" className="chileMapaHome" >
+            <Link to="/chile" className="chileMapaHome" >
                 <div className="tituloIzquierda">Chile</div>
                 <div className="dashed"></div>
                 <div className="puntoPais"> </div>
-            </a>
+            </Link>
         </article>
 
     </section>
