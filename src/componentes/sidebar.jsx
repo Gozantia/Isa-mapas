@@ -29,28 +29,21 @@ function Sidebar() {
 
   return (
       <>
-    {showSide}
+      <section className="contenidoLado">
+        <side>
+          <ul>
+            <li><a href="/Colombia" ></a></li>
+            <li></li>
+            <li></li>
+          </ul>
+
+        </side>
+         {showSide}
+     </section>
+  
     </>
   );
 
-
-// const Sidebar =() => {
-
-//     history = useHistory()
-// history.listen((location) => {
-//     console.log(`The current URL is ${location.pathname}`)
-// // Do stuff.
-// })
-
-    // const [showSide, setShowSide]= useState (sideBaryeah())
-   
-    // function sideBaryeah() {
-    //     const colombia = '/colombia';
-    //     if (actualLocation===colombia) {
-    //       return 'Hola ';
-    //     }
-    //     return 'Chao';
-    // }
     
 }
 

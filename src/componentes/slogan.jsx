@@ -4,8 +4,8 @@ function slogan() {
     return (
         <div className="hashtag">
             <div className="naranjaCursiva">#</div> 
-            CUIDÁNDOTE
-            <div className="naranjaCursiva">NOSCUIDAMOS</div>
+            todosSomos
+            <div className="naranjaCursiva">UNO</div>
         </div>
     )
 }

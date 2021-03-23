@@ -13,10 +13,8 @@ const Home = ({mostrarSideBar, show})  => (
             <strong> de que todos somos uno, </strong>
             hay conexión
              <hr />
-             <button onClick={ mostrarSideBar }> 
-             {show ? <p> mostrar</p> : <p> ocultar</p>}
-             </button>
-            </div>
+        <p className="slogan parrafo"> Desde la solidaridad y la empatía, nos unimos como familia multilatina para contribuir a mitigar los impactos de la COVID-19 en América Latina. Este es el resultado de un trabajo comprometido, corresponsable y decidido de una alianza entre universidad-empresa-Estado.</p>
+        </div>
     
         </article>
         <article className="mapaHome">

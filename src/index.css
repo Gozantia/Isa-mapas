@@ -98,7 +98,9 @@ header {
 img.america {
     margin-top: -14rem;
 }
-
+.parrafo {
+    font-size: 1rem;
+}
 img.SomosUno {
     position: absolute;
     bottom: 6rem;
@@ -237,9 +239,11 @@ img.SomosUno {
         bottom: 42.4%;
         left: 22.1%;
     }
+    /*
     .slogan div{
       width: 251px;
-  }
+     
+  } */
 }
 
 .slide-enter {

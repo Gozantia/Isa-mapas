@@ -25,6 +25,7 @@ function Topic() {
     <div>
       <h1>{topicId}</h1>
       <p>{topic.nombre}</p>
+      <p>{topic.emoji} </p>
     </div>
     )
 }
