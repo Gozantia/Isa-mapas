@@ -1,13 +1,13 @@
 import React from 'react'
 
-function Chile() {
+function Peru() {
     return (
         <>
-         <section className="chileSection">
+         <section className="mapaSection peruSection">
 
          </section>
         </>
     )
 }
 
-export default Chile
+export default Peru

@@ -5,6 +5,8 @@ nav ul {
     overflow: hidden;
     display: flex;
     gap: 30px;  
+    padding: 0;
+    place-content: center;
 }
 
 nav ul li a {

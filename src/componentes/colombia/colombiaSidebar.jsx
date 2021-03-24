@@ -17,11 +17,8 @@ function ColombiaSidebar() {
                     <h2>USD 2,702,703</h2>
                     </div>
                 </div>
-                <article>
+                <article className="contentCapsule">
                     <h2>Acción País</h2>
-                    <p>
-                    Esta iniciativa está enfocada en la reactivación económica y la atención en salud: pruebas diagnósticas, elementos de protección para el personal médico, desarrollo e investigación para generación de capacidades locales. Así nos unimos desde Colombia. 
-                    </p>
                     <p>
                     Esta iniciativa está enfocada en la reactivación económica y la atención en salud: pruebas diagnósticas, elementos de protección para el personal médico, desarrollo e investigación para generación de capacidades locales. Así nos unimos desde Colombia. 
                     </p>

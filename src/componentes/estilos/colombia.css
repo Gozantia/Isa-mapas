@@ -1,13 +1,5 @@
 .colombiaSection{
-    width: 71%;
-    max-width: 100%;
-    height: 16rem;
-    background: url(../imagenes/colombiaMapaBg@2x.png) no-repeat;
-    background-size: cover;
-    background-position: 0;
-    position: absolute;
-    right: 3rem;
-    top: 6rem;
+   display:none;
 
 }
 
@@ -35,6 +27,7 @@ a.SanAndresMapa {
 
 @media (min-width: 768px) {
         .colombiaSection{
+            display: initial;
             width: 32rem;
             max-width: 100%;
             height: 33rem;

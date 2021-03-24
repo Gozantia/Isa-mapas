@@ -2,7 +2,9 @@ import React from 'react'
 import { Route, Switch , withRouter} from "react-router-dom";
 import Home from "../componentes/home";
 import Colombia from "../componentes/colombia/colombiaMapa";
-import Chile from "../componentes/chile" 
+import Chile from "../componentes/chileMapa" ;
+import Peru from "../componentes/peruMapa";
+import Brasil from "../componentes/brasilMapa";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 const Enrutador = withRouter(({ location }) => (
@@ -14,6 +16,8 @@ const Enrutador = withRouter(({ location }) => (
       <Route path="/" exact component={() => <Home />} />
       <Route path="/colombia" component={() => <Colombia /> } />
       <Route path="/chile" component={() => <Chile /> } />
+      <Route path="/peru" component={() => <Peru /> } />
+      <Route path="/brasil" component={() => <Brasil /> } />
       <Route render={() => <h1>404: Página no encontrada</h1>} />
      
     </Switch>
