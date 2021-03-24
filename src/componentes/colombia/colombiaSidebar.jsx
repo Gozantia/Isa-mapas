@@ -22,6 +22,9 @@ function ColombiaSidebar() {
                     <p>
                     Esta iniciativa está enfocada en la reactivación económica y la atención en salud: pruebas diagnósticas, elementos de protección para el personal médico, desarrollo e investigación para generación de capacidades locales. Así nos unimos desde Colombia. 
                     </p>
+                    <p>
+                    Esta iniciativa está enfocada en la reactivación económica y la atención en salud: pruebas diagnósticas, elementos de protección para el personal médico, desarrollo e investigación para generación de capacidades locales. Así nos unimos desde Colombia. 
+                    </p>
                 </article>
                 </section>
         </section>

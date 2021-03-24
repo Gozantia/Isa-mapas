@@ -15,7 +15,7 @@ const Home = ({mostrarSideBar, show})  => (
              <hr />
         </div>
         <div> 
-        <p className="slogan parrafo"> Desde la solidaridad y la empatía, nos unimos como familia multilatina para contribuir a mitigar los impactos de la COVID-19 en América Latina. Este es el resultado de un trabajo comprometido, corresponsable y decidido de una alianza entre universidad-empresa-Estado.</p>
+        <p className="parrafo"> Desde la solidaridad y la empatía, nos unimos como familia multilatina para contribuir a mitigar los impactos de la COVID-19 en América Latina. Este es el resultado de un trabajo comprometido, corresponsable y decidido de una alianza entre universidad-empresa-Estado.</p>
         </div>
     
         </article>

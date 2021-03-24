@@ -1,4 +1,37 @@
+.colombiaSection{
+    width: 71%;
+    max-width: 100%;
+    height: 16rem;
+    background: url(../imagenes/colombiaMapaBg@2x.png) no-repeat;
+    background-size: cover;
+    background-position: 0;
+    position: absolute;
+    right: 3rem;
+    top: 6rem;
 
+}
+
+.colombiaSection a {
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    transition: 0.2s;
+    
+}
+
+.colombiaSection a:hover {
+    color: #DB5113;
+    font-size: 18px;
+}
+a.SanAndresMapa {
+    top: 8%;
+    left: -24.5%;
+}
 
 @media (min-width: 768px) {
         .colombiaSection{
@@ -11,7 +44,7 @@
             position: absolute;
             right: 3rem;
             top: 4rem;
-        
+   
         }
         .colombiaSection a {
             color: #ffffff;

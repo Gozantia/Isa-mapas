@@ -5,7 +5,6 @@ body {
     background-size: cover;
     width: 100%;
     height: 100%;
-    overflow: hidden;
     margin:0;
     background: url("./componentes/imagenes/bg_index_1.jpg") no-repeat;
     background-size: cover;
@@ -40,30 +39,28 @@ header {
     z-index: 10;
 }
 .logo {
-    flex: 5%;
-    margin: 0 0 0 27px;
+    margin:30px;
 }
 .logo img{
-    width: 188px; 
+    width: 155px; 
 }
  nav {
      flex: 50%;
  }
  .hashtag {
-    flex: 10% 1;
     display: flex;
     background: #fff;
-    height: 35px;
+    height: 23px;
     align-items: center;
     align-self: center;
     justify-content: center;
     border-radius: 20px;
     font-family: 'Rubik', sans-serif;
     color: #4E4E4E;
-    width: 16rem;
+    width: 10rem;
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 37px;
  }
 
  .naranjaCursiva{
@@ -83,6 +80,7 @@ header {
     color: #fff;
     font-size: 1.5rem;
     font-weight: 100;
+    padding:6rem 1rem 0 1rem;
 }
 .slogan hr, .contentSidebar hr{
     height: 3px;
@@ -92,9 +90,7 @@ header {
     position: absolute;
     font-weight: 100;
 }
-.slogan div {
-    padding-left: 10rem;
-}
+
 .slogan strong {
     display: block;
 }
@@ -127,7 +123,7 @@ img.SomosUno {
   }
 .dashed {
     border-top: 2px dotted #bdb9b9;
-    width: 10rem;
+    width: 4rem;
 }
 .tituloDerecha {
     position: absolute;
@@ -189,23 +185,31 @@ img.SomosUno {
 .contenido {
     flex: 3;
 }
-@media (min-width: 768px) {
-
-    header {
-        flex-direction: row;
-    }
-    .cuerpo {
-        flex-direction: row;
-    }
-    .mapaHome {
-    width: 54.6rem;
+.sideContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .contentSidebar {
+    background: #fff;
+    height: 31rem;
+    padding: 2rem 0 0 2rem;
+    border-radius: 0 10px 0 0;
+    box-shadow: 7px 6px 11px -6px #080808;
+  }
+  
+.mapaHome {
+    width: 26rem;
     max-width: 100%;
-    margin: -10px 0;
-    height: 45.5rem;
+    margin: 0;
+    height: 25.5rem;
     position: relative;
     background: url(./componentes/imagenes/mapaAmerica@2x.png) no-repeat;
-    background-size: 744px;
-    background-position: -4rem -11rem;
+    background-size: cover;
+    background-position: -5rem -9rem;
     overflow: hidden;
     }
     .mapaHome a {
@@ -231,26 +235,78 @@ img.SomosUno {
         
     }
     a.colombiaMapaHome {
-        top: 37.4%;
+        top: 27.4%;
         left: 27.1%;
     }
    
      a.peruMapaHome {
-        top: 52.4%;
+        top: 40.4%;
         left: 25.1%;
     }
     a.chileMapaHome {
-        bottom: 20.4%;
+        bottom: 34.4%;
         left: 26.1%;
     }
-    /*
-    .slogan div{
-      width: 251px;
-     
-  } */
+
+@media (min-width: 768px) {
+
+    .mapaHome {
+    width: 44.6rem;
+    max-width: 100%;
+    margin: -60px 0;
+    height: 45.5rem;
+    position: relative;
+    background: url(./componentes/imagenes/mapaAmerica@2x.png) no-repeat;
+    background-size: cover;
+    background-position: -9rem -11rem;
+    overflow: hidden;
+    }
+    .mapaHome a {
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+        position: absolute;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        transition: 0.2s;
+        
+    }
+
+    .mapaHome a:hover {
+        color: #DB5113;
+        font-size: 18px;
+    }
+    a.brasilMapaHome {
+        bottom: 46.4%;
+    right: 11.1%;
+        
+    }
+    a.colombiaMapaHome {
+        top: 35.4%;
+        left: 18.1%;
+    }
+   
+     a.peruMapaHome {        
+        top: 50.4%;
+        left: 18.1%;
+    }
+    a.chileMapaHome {
+        bottom: 23.4%;
+    left: 18.1%;
+    }
+
+    .dashed {
+        border-top: 2px dotted #bdb9b9;
+        width: 10rem;
+    }
+    .cuerpo {
+        flex-direction: row;
+    }
+
   .contentSidebar {
     background: #fff;
-    width: 36rem;
     height: 31rem;
     padding: 2rem 0 0 2rem;
     border-radius: 0 10px 0 0;
@@ -262,6 +318,7 @@ img.SomosUno {
     left: 3rem;
     display: grid;
     grid-template-columns: 165px 1fr;
+    width: 40rem;
   }
   .navSideBar {
     border-radius: 10px 0 0 0;
@@ -281,6 +338,25 @@ img.SomosUno {
         top: 4rem;
     
     }
+    .slogan {
+        padding:0;
+        padding-left: 8rem;
+      
+    }
+    .logo {
+        margin:27px 50px;
+    }
+    .hashtag {
+        height: 35px;
+        width: 16rem;
+        right: 10px;
+        top: 10px;
+     }
+     body {
+        overflow: hidden;
+    }
+    
+    
 }
 
 .slide-enter {
@@ -342,4 +418,7 @@ img.SomosUno {
 
 .navSideBar {
     background: #e8effb;
+    border-radius: 10px 0 0 0;
+    box-shadow: -4px 6px 11px -7px #080808;
+    padding-top: 0;
 }
