@@ -1,6 +1,6 @@
 import React from 'react'
 import NavegacionPaises from './navPaises'
-export default function chileSidebar() {
+export default function ChileSidebar() {
     return (
         <>
                     <section className="sideContainer">

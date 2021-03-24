@@ -4,6 +4,8 @@ import {useLocation } from "react-router-dom";
 import SanAndres from "./colombia/sanAndres/contenido";
 import Colombia from "./colombia/colombiaSidebar"
 import Chile from "./chileSidebar"
+import Peru from "./peruSidebar"
+import Brasil from "./brasilSidebar"
 
 function Sidebar() {
     const location = useLocation();
@@ -15,7 +17,12 @@ function Sidebar() {
 
         setShowSide( () => {
             switch (location.pathname) {
-              
+              case '/peru':
+                setShowSide(<Peru/>);
+                break;
+                case '/brasil':
+                setShowSide(<Brasil/>);
+                break;
               case '/chile':
                 setShowSide(<Chile/>);
                 break;

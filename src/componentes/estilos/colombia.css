@@ -58,7 +58,11 @@ a.SanAndresMapa {
         }
         a.SanAndresMapa {
             top: 8%;
-            left: -24.5%;
+            left: 6.5%;
+        }
+        a.atlanticoMapa {
+            top: 10%;
+            left: 18.5%;
         }
 
 }

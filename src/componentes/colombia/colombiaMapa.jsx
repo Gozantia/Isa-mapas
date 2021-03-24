@@ -16,8 +16,9 @@ function Colombia() {
         <Route exact path={path}>
         <section className="colombiaSection">
         <Link  to={`${url}/san-andres`} className="SanAndresMapa">
-        <div className="tituloIzquierda">San Andrés</div>
-        <div className="dashed"></div>
+        <div className="puntoPais"> </div>
+        </Link>
+        <Link  to={`${url}/atlantico`} className="atlanticoMapa">
         <div className="puntoPais"> </div>
         </Link>
         </section>

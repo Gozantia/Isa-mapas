@@ -240,6 +240,7 @@ img.SomosUno {
     opacity: 0;
   }
   
+  
   .slide-enter.slide-enter-active {
     
     transform: translateX(0%);
@@ -439,15 +440,15 @@ img.SomosUno {
         background: url(./componentes/imagenes/peruMapa@2x.png) no-repeat;
         background-size: cover;
         background-position: center center;
-        width: 23rem;
-        height: 30rem;
+        width: 30.5rem;
+        height: 27rem;
     }
     .brasilSection {
         background: url(./componentes/imagenes/brasilMapa@2x.png) no-repeat;
         background-size: cover;
         background-position: center center;
-        width: 23rem;
-        height: 30rem;
+        width: 34rem;
+        height: 27rem;
     }
     
     .slogan {

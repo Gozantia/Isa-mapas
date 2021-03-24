@@ -1,18 +1,25 @@
 import React from 'react';
 import {useParams} from "react-router-dom";
+import mapaSanAndres from "../imagenes/sanAndres@2x.png"
 
 const tropics= [
-    {
+     {
         nombre: "San Andrés y Providencia",
+        mapa: <img src={mapaSanAndres} alt="ISA"/>,
         id: 'san-andres',
-        proyecto: "proyecto proyecto",
-        emoji:" _i_"
+        clase: "mapaSanAndres"
     },
     {
         nombre: "Antioquia",
         proyecto: "giño giño",
         emoji: "_O_"
-    }
+    },
+    {
+      nombre: "Atlántico",
+      id: 'atlantico',
+      clase: "mapaAtlantico",
+      mapa: "giño giño",
+  }
 ]
 
 function Topic() {
@@ -20,13 +27,17 @@ function Topic() {
 
     let { topicId } = useParams();
     const topic= tropics.find(({id}) => id === topicId)
-    console.log(topic)
+    const claseRegion = topic.clase;
+    const mapaRegion = topic.mapa;
+    const nombreRegion = topic.nombre;
   return (
-    <div>
-      <h1>{topicId}</h1>
-      <p>{topic.nombre}</p>
-      <p>{topic.emoji} </p>
-    </div>
+    <section className={claseRegion}>
+      <h2>{nombreRegion}</h2>
+      <figure>
+        {mapaRegion}
+      </figure>     
+    </section>
+    
     )
 }
 

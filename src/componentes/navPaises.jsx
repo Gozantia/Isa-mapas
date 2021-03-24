@@ -5,20 +5,25 @@ import { Link } from "react-router-dom";
 function NavPaises() {
     return (
         <nav className="navSideBar">
-            <ul>
+            <ul> <Link to="/colombia">
                 <li>
                     Colombia
                 </li>
+                </Link>
+                <Link to="/brasil">
                 <li>
                     Brasil
                 </li>
+                </Link>
+                <Link to="/peru">
                 <li>
                     Perú
                 </li>
-                <li> <Link to="/chile">
+                </Link>
+                <Link to="/chile"> <li> 
                     Chile 
-                    </Link>
                 </li>
+                </Link>
             </ul>
         </nav>
     )
