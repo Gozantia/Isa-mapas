@@ -491,7 +491,7 @@ img.SomosUno {
 
   .contentSidebar {
     background: #fff;
-    height: 31rem;
+    height: 81vh;
     padding: 2rem 0 0 2rem;
     border-radius: 0 10px 0 0;
     box-shadow: 7px 6px 11px -6px #080808;
@@ -502,7 +502,7 @@ img.SomosUno {
     left: 3rem;
     display: grid;
     grid-template-columns: 165px 1fr;
-    width: 44rem;
+    width: 51vw;
   }
   .contentRegion {
     display: grid;
