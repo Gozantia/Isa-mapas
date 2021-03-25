@@ -64,5 +64,46 @@ a.SanAndresMapa {
             top: 10%;
             left: 18.5%;
         }
+        a.bolivarMapa {
+            top: 22.4%;
+            left: 23%;
+        }
+        a.cesarMapa {
+            top: 13.4%;
+            left: 27%;
+        }
+        a.antioquiaMapa {
+            top: 31.4%;
+            left: 18%;
+        }
+        a.chocoMapa {
+            top: 37.4%;
+            left: 10%;
+        }
+        a.boyacaMapa {
+            top: 36.4%;
+            left: 29%;
+        }
+        a.cordobaMapa {
+            top: 21.4%;
+            left: 15%;
+        }
+        a.cundinamarcaMapa {
+            top: 38.4%;
+            left: 22%;
+        }
+        a.metaMapa {
+            top: 47.4%;
+            left: 31%;
+        }
+        a.narinoMapa {
+            top: 56.4%;
+            left: 4%;
+        }
+        a.amazonasMapa {
+            top: 74.4%;
+            left: 45%;
+        }
+        
 
 }
