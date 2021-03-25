@@ -9,7 +9,7 @@ export default function App() {
 
     return (
       
-     <Router>
+     <Router  basename={'/todos_somos_uno'}>
        <div className="app">
        <Sidebar/>
           <div className="contenido">

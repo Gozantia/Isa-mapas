@@ -20,22 +20,22 @@ const Home = ({mostrarSideBar, show})  => (
     
         </article>
         <article className="mapaHome">
-            <Link to="/brasil" className="brasilMapaHome">
+            <Link to={`${process.env.PUBLIC_URL}/brasil.html`} className="brasilMapaHome">
                 <div className="puntoPais"> </div>
                 <div className="dashed"></div>
                 <div className="tituloDerecha">Brasil</div>
             </Link>
-            <Link to="/colombia" className="colombiaMapaHome">
+            <Link to={`${process.env.PUBLIC_URL}/colombia.html`} className="colombiaMapaHome">
                 <div className="tituloIzquierda">Colombia</div>
                 <div className="dashed"></div>
                 <div className="puntoPais"> </div>               
              </Link>
-            <Link to="/peru" className="peruMapaHome">
+            <Link to={`${process.env.PUBLIC_URL}/peru.html`} className="peruMapaHome">
                 <div className="tituloIzquierda">Perú</div>
                 <div className="dashed"></div>
                 <div className="puntoPais"> </div> 
             </Link>
-            <Link to="/chile" className="chileMapaHome" >
+            <Link to={`${process.env.PUBLIC_URL}/chile.html`} className="chileMapaHome" >
                 <div className="tituloIzquierda">Chile</div>
                 <div className="dashed"></div>
                 <div className="puntoPais"> </div>

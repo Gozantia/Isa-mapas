@@ -16,14 +16,13 @@ const Enrutador = withRouter(({ location }) => (
     <main>
     <Switch location={location}>
     
-      <Route path="/" exact component={() => <Home />} />
-      <Route path="/colombia" component={() => <Colombia /> } />
-      <Route path="/chile" component={() => <Chile /> } />
-      <Route path="/peru" component={() => <Peru /> } />
-      <Route path="/brasil" component={() => <Brasil /> } />
-      <Route path="/proyectos-one-health" component={() => <Noticia1 /> } />
-      <Route path="/masificacion-pruebas-covid-19" component={() => <Noticia2 /> } />
-      <Route path="/plasma-convaleciente-covid-19" component={() => <Noticia3 /> } />
+      <Route  path={`${process.env.PUBLIC_URL}/`}  exact component={() => <Home />} />
+      <Route path={`${process.env.PUBLIC_URL}/colombia.html`}  component={() => <Colombia /> } />
+      <Route path={`${process.env.PUBLIC_URL}/chile.html`} component={() => <Chile /> } />
+      <Route  path={`${process.env.PUBLIC_URL}/peru.html`} component={() => <Peru /> } />
+      <Route path={`${process.env.PUBLIC_URL}/brasil.html`} component={() => <Brasil /> } />
+      <Route path={`${process.env.PUBLIC_URL}/proyectos-one-health`} component={() => <Noticia1 /> } />
+      <Route path={`${process.env.PUBLIC_URL}/plasma-convaleciente-covid-19`}component={() => <Noticia3 /> } />
       <Route render={() => <h1>404: Página no encontrada</h1>} />
      
     </Switch>
