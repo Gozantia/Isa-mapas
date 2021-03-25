@@ -1,7 +1,7 @@
 
 import React, {useState, useEffect} from "react";
 import {useLocation } from "react-router-dom";
-import SanAndres from "./colombia/sanAndres/contenido";
+import ContenidoUno from "./colombia/contenidoUno";
 import Colombia from "./colombia/colombiaSidebar"
 import Chile from "./chileSidebar"
 import Peru from "./peruSidebar"
@@ -31,8 +31,10 @@ function Sidebar() {
                 setShowSide(<Colombia/>);
                 break;
               case '/colombia/san-andres':
-                    setShowSide(<SanAndres/>);
-                    
+                    setShowSide(<ContenidoUno/>);
+                  break;
+              case '/colombia/atlantico':
+                    setShowSide(<ContenidoUno/>);
                   break;
                   default:  
                     setShowSide('');
