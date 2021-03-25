@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import fotoContent1 from '../imagenes/proyectoOneHealth.jpg'
 import NavegacionColombia from './navColombia'
 import { Link } from "react-router-dom";
