@@ -6,68 +6,68 @@ function navColombia() {
         <nav className="navSideBar navSideBarLarga">
             <ul className=" navLarga"> 
 
-            <Link to="/colombia/amazonas">
+            <Link to={`${process.env.PUBLIC_URL}/colombia/amazonas`}>
                 <li>
                  Amazonas
                 </li>
                 </Link>
 
-            <Link to="/colombia/antioquia">
+            <Link to={`${process.env.PUBLIC_URL}/colombia/antioquia`}>
                 <li>
                     Antioquia
                 </li>
             </Link>
-            <Link to="/colombia/atlantico">
+            <Link to={ `${process.env.PUBLIC_URL}/colombia/atlantico`}>
                 <li>
                     Atlántico
                 </li>
                 </Link>
-                <Link to="/colombia/boyaca">
+                <Link to={`${process.env.PUBLIC_URL}/colombia/boyaca`}>
                 <li>
                     Boyacá
                 </li>
                 </Link>   
-                <Link to="/colombia/bolivar">
+                <Link to={`${process.env.PUBLIC_URL}/colombia/bolivar`}>
                 <li>
                     Bolivar
                 </li>
                 </Link>   
-                <Link to="/colombia/cesar">
+                <Link to={`${process.env.PUBLIC_URL}/colombia/cesar`}>
                 <li>
                     Cesar
                 </li>
                 </Link>
 
-                <Link to="/colombia/choco">
+                <Link to={`${process.env.PUBLIC_URL}/colombia/choco`}>
                 <li>
                     Chocó
                 </li>
                 </Link>
 
-                <Link to="/colombia/cordoba">
+                <Link to={`${process.env.PUBLIC_URL}/colombia/cordoba`}>
                 <li>
                     Córdoba
                 </li>
                 </Link>
      
  
-                <Link to="/colombia/cundinamarca">
+                <Link to={`${process.env.PUBLIC_URL}/colombia/cundinamarca`}>
                 <li>
                     Cundinamarca
                 </li>
                 </Link>
-                <Link to="/colombia/meta">
+                <Link to={`${process.env.PUBLIC_URL}/colombia/antioquia`}>
                 <li>
                     Meta
                 </li>
                 </Link>
-                <Link to="/colombia/narino">
+                <Link to={ `${process.env.PUBLIC_URL}/colombia/narino`}>
                 <li>
                     Nariño
                 </li>
                 </Link>
 
-                <Link to="/colombia/san-andres">
+                <Link to={`${process.env.PUBLIC_URL}/colombia/san-andres`}>
                 <li>
                     San Andrés
                 </li>
