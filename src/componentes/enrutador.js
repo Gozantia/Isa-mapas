@@ -17,10 +17,10 @@ const Enrutador = withRouter(({ location }) => (
     <Switch location={location}>
     
       <Route  path={`${process.env.PUBLIC_URL}/`}  exact component={() => <Home />} />
-      <Route path={`${process.env.PUBLIC_URL}/colombia.html`}  component={() => <Colombia /> } />
-      <Route path={`${process.env.PUBLIC_URL}/chile.html`} component={() => <Chile /> } />
-      <Route  path={`${process.env.PUBLIC_URL}/peru.html`} component={() => <Peru /> } />
-      <Route path={`${process.env.PUBLIC_URL}/brasil.html`} component={() => <Brasil /> } />
+      <Route path={`${process.env.PUBLIC_URL}/colombia`}  component={() => <Colombia /> } />
+      <Route path={`${process.env.PUBLIC_URL}/chile`} component={() => <Chile /> } />
+      <Route  path={`${process.env.PUBLIC_URL}/peru`} component={() => <Peru /> } />
+      <Route path={`${process.env.PUBLIC_URL}/brasil`} component={() => <Brasil /> } />
       <Route path={`${process.env.PUBLIC_URL}/proyectos-one-health`} component={() => <Noticia1 /> } />
       <Route path={`${process.env.PUBLIC_URL}/plasma-convaleciente-covid-19`}component={() => <Noticia3 /> } />
       <Route render={() => <h1>404: Página no encontrada</h1>} />

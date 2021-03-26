@@ -20,53 +20,53 @@ function Sidebar() {
 
         setShowSide( () => {
             switch (location.pathname) {
-              case '/peru':
+              case `${process.env.PUBLIC_URL}/peru`:
                 setShowSide(<Peru/>);
                 break;
-                case '/brasil':
+                case `${process.env.PUBLIC_URL}/brasil`:
                 setShowSide(<Brasil/>);
                 break;
-              case '/chile':
+              case `${process.env.PUBLIC_URL}/chile`:
                 setShowSide(<Chile/>);
                 break;
 
-              case '/colombia':
+              case `${process.env.PUBLIC_URL}/colombia`:
                 setShowSide(<Colombia/>);
                 break;
-              case '/colombia/san-andres':
+              case `${process.env.PUBLIC_URL}/colombia/san-andres`:
                     setShowSide(<ContenidoUno/>);
                   break;
-              case '/colombia/atlantico':
+              case `${process.env.PUBLIC_URL}/colombia/atlantico`:
                     setShowSide(<ContenidoUnoyDos/>);
                   break;
-                  case '/colombia/boyaca':
+                  case `${process.env.PUBLIC_URL}/colombia/boyaca`:
                     setShowSide(<ContenidoDos/>);
                   break;
-                  case '/colombia/choco':
+                  case `${process.env.PUBLIC_URL}/colombia/choco`:
                     setShowSide(<ContenidoDos/>);
                   break;
-                  case '/colombia/cordoba':
+                  case `${process.env.PUBLIC_URL}/colombia/cordoba`:
                     setShowSide(<ContenidoDos/>);
                   break;
-                  case '/colombia/bolivar':
+                  case `${process.env.PUBLIC_URL}/colombia/bolivar`:
                     setShowSide(<ContenidoDos/>);
                   break;
-                  case '/colombia/meta':
+                  case `${process.env.PUBLIC_URL}/colombia/meta`:
                     setShowSide(<ContenidoUno/>);
                   break;
-                  case '/colombia/cundinamarca':
+                  case `${process.env.PUBLIC_URL}/colombia/cundinamarca`:
                     setShowSide(<ContenidoTres/>);
                   break;
-                  case '/colombia/antioquia':
+                  case `${process.env.PUBLIC_URL}/colombia/antioquia`:
                     setShowSide(<ContenidoUnoyDos/>);
                   break;
-                  case '/colombia/cesar':
+                  case `${process.env.PUBLIC_URL}/colombia/cesar`:
                     setShowSide(<ContenidoUnoyDos/>);
                   break;
-                  case '/colombia/narino':
+                  case `${process.env.PUBLIC_URL}/colombia/narino`:
                     setShowSide(<ContenidoUnoyDos/>);
                   break;
-                  case '/colombia/amazonas':
+                  case `${process.env.PUBLIC_URL}/colombia/amazonas`:
                     setShowSide(<ContenidoUnoyDos/>);
                   break;
                   default:  
